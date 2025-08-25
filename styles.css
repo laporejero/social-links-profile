@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--grey-900);
+    font-family: "Space Mono", monospace;
+    color: var(--white);
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 80px auto;
+    background-color: var(--grey-800);
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-heading {
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.profile-paragraph {
+    margin-bottom: 1.5rem;
+}
+
+.profile-address {
+    color: var(--green);
+    margin-bottom: 2rem;
+}
+
+.link-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.link-button button {
+    font-family: "Space Mono", monospace;
+    background-color: var(--grey-700);
+    color: var(--white);
+    
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 1rem 0;
+}
+
+.link-button button:hover {
+    opacity: 0.8;
+}
